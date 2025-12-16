@@ -1,0 +1,65 @@
+.image-section {
+  display: none;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 0.8rem;
+  background-color: rgba(128, 128, 128, 0.458);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  position: relative;
+  transition: display 1.5s;
+}
+
+.qrcode-img {
+  height: 10rem;;
+}
+
+.copy-img {
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  object-fit: cover;
+  padding: 0rem;
+}
+
+.gen-btn {
+  background-color: rgb(34, 34, 79);
+}
+
+.tool-tip {
+  background-color: rgb(61, 59, 59);
+  color: white;
+  padding: 0.1rem 0.3rem;
+  position: absolute;
+  top: 11rem;
+  right: -1.5rem;
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+.animation {
+  animation: shake 0.1s linear 5;
+  border: solid 1px red;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-0.1rem);
+  }
+  50% {
+    transform: translateX(0.1rem);
+  }
+  75% {
+    transform: translateX(-0.1rem);
+  }
+  100% {
+    transform: translateX(0);
+  }
+
+}
