@@ -49,3 +49,9 @@ async function copyImage() {
     alert('Failed to copy, server error maybe...');
   };
 };
+
+textElement.addEventListener( 'keydown' , (event) => {
+  if( event.key === 'Enter') {
+    genElement.click();
+  }
+});
